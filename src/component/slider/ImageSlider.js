@@ -10,7 +10,7 @@ class ImageSlider extends React.Component {
         <div className="slider">
           <figure>
             {this.props.Images.map(item => {
-              return <img className="image" src={item.src} />;
+              return <img alt={item.alt} className="image" src={item.src} />;
             })}
           </figure>
         </div>

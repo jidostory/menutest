@@ -12,21 +12,17 @@ class Menu extends React.Component {
 
   render() {
     return (
-      <div>
-        <div>
-          <nav className="nav">
-            <ul className="nav__menu">
-              {this.props.MenuItem.map(item => {
-                return (
-                  <li classNeme="nav_menu-item">
-                    <a>{item.Name}</a>
-                  </li>
-                );
-              })}
-            </ul>
-          </nav>
-        </div>
-      </div>
+      <nav className="nav">
+        <ul className="nav__menu">
+          {this.props.MenuItem.map(item => {
+            return (
+              <li classNeme="nav_menu-item">
+                <a>{item.Name}</a>
+              </li>
+            );
+          })}
+        </ul>
+      </nav>
     );
   }
 }
